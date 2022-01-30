@@ -1,0 +1,263 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.bodypart{
+    background: url(./resources/bg.jpg) no-repeat;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Navbar
+{
+    padding: 10px;
+    
+    width: 100vw;
+    background: rgba(82, 82, 82, 0.795);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar .Logo
+{
+    margin: 0% 2%;
+    width: 3rem;
+    height: 3rem;
+}
+.Navbar .Logo img
+{
+    width: 3rem;
+    height: 3rem;
+}
+.Serchbox
+{
+    border-radius: 30px;
+    display: flex;
+    padding: 0% 1%;
+    Margin: 0% 1%;
+    flex-wrap: wrap;
+    width: 400px;
+    overflow: hidden;
+    height: 2.5rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(53, 52, 52, 0.644);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.397);
+}
+.Serchbox input, .Serchbox input::placeholder{
+    background-color: rgba(53, 52, 52, 0);
+    border:none;
+    padding: 1% 3%;
+    outline: none;
+    color: rgba(255, 255, 255, 0.452);
+    width: 340px;
+    height: 2.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.links{
+    justify-content: center;
+align-items: center;
+padding: 1%;
+    width: 30rem;
+}
+.links a{
+
+    text-decoration: none;
+    color: #fff;
+    Margin: 0% 1%;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.links a:hover
+{   
+    color: rgba(25, 192, 3, 0.938);
+    
+
+}
+
+/* ----------------------------------Landing Page----- */
+
+.Landingpage{
+   width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    overflow: hidden;
+}
+.infoPart{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+/* media queerry
+ */
+.projectPart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contentpart::-webkit-scrollbar{
+    display: none;
+}
+.contentpart
+{background: url(./resources/wall3.jpg) no-repeat;
+    background-position: center;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:50%;
+    height: 100%;
+    align-items: center;
+    transition: .7s;
+}
+.contentpart h1{
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(61, 60, 60, 0.13);
+}
+.contentpart:hover{
+    width:80%;
+}
+.infoPart img{ 
+  
+    width: 300px;
+height: 500px;
+transition: .6s;
+}
+
+.infoPart img:hover{
+
+    transform: translateY(-5px);
+
+}
+.Detailspart{
+    width: 300px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Detailspart:hover {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: rgb(240, 101, 21);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: oldlace;
+    font-size:14px;
+    margin:8% 0% 0% 0%;
+    cursor: pointer;
+}
+.Maincard{
+    margin: 5%;
+}
+.Card{
+    width: 300px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(61, 60, 60, 0.568);
+    transition: .7s;
+}
+
+.Card:hover{
+    transform: translateY(-15px);
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 5%;
+
+font-size: 2em;
+}
+.socialmedia div{
+    padding: 5% 30%;
+    transition: .6s;
+}
+.socialmedia div a{
+    color: black;
+}
+.socialmedia div:hover,.socialmedia div:hover a{
+    color: rgba(25, 192, 3, 0.938);
+    transform: scale(1.5);
+}
+.image{
+    width: 300px;
+
+    overflow: hidden;
+}
+.Card img{
+    width: 300px;
+    transition: .7s;
+   
+  
+}
+.Card img:hover{
+    transform: scale(1.4);
+}
+.details{
+    text-align: left;
+    padding: 20px;
+}
+.details h2{
+    margin: 2% 0%;
+    color: rgb(39, 38, 38);
+}
+.details p{
+    font-size: 16px;
+    color:rgb(100, 100, 100)
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1010px) {
+    .Landingpage{
+        width: 100%;
+        height: 200vh;
+         background: rgb(255, 255, 255);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+        justify-content: center;
+         overflow: hidden;
+     }
+     .contentpart{
+         width: 80%;
+     }
+     .contentpart:hover{
+         width: 90%;
+     }
+  }
