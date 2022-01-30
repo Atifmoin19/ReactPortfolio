@@ -1,7 +1,7 @@
 import React from 'react';
 import image from '../resources/my.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF,faInstagram,faTwitter } from '@fortawesome/free-brands-svg-icons' 
+import { faFacebookF,faInstagram,faLinkedin } from '@fortawesome/free-brands-svg-icons' 
 
 import Project from './Project';
 
@@ -15,9 +15,10 @@ const Landing = () => {
                 <h1>Atif Moin</h1>
                 <p> My name is atif moin and i am a web developer and a graphic designer also good at coding. </p>
                 <div className='socialmedia'>
-               <div><a href='https://www.instagram.com/_.a_ti_f._/'><FontAwesomeIcon icon={faFacebookF} /></a></div>
-                <div><a href='https://www.instagram.com/_.a_ti_f._/'><FontAwesomeIcon icon={faInstagram} /></a></div>
-               <div> <a href='https://www.instagram.com/_.a_ti_f._/'><FontAwesomeIcon icon={faTwitter} /></a></div>                </div>
+               <div><a href='https://www.facebook.com/jsone.atif/'  target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a></div>
+                <div><a href='https://www.instagram.com/_.a_ti_f._/' target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></div>
+               <div> <a href='https://www.linkedin.com/in/atif-moin-858167179/' target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></div>        
+                </div>
                 </div>
 
 </div>
