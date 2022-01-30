@@ -9,7 +9,6 @@ const Landing = () => {
     return (
         <div className='Landingpage'>
         <div className='infoPart'>
-            
                 <img src={image}/>
                 <div className='Detailspart'>
                 <h1>Atif Moin</h1>

@@ -91,13 +91,18 @@ padding: 1%;
     display: flex;
     align-items: center;
    justify-content: center;
+   box-sizing: border-box;
     overflow: hidden;
+    padding: 4%;
 }
 .infoPart{
     display: flex;
     justify-content: center;
+    
+    box-sizing: border-box;
     width: 50%;
     height: 100%;
+    overflow:hidden;
     align-items: center;
     flex-direction: column;
 }
@@ -136,9 +141,8 @@ padding: 1%;
     width:80%;
 }
 .infoPart img{ 
-  
-    width: 300px;
-height: 500px;
+    width: 35%;
+
 transition: .6s;
 }
 
@@ -148,7 +152,7 @@ transition: .6s;
 
 }
 .Detailspart{
-    width: 300px;
+    width: 55%;
     margin: 25px;
     display: flex;
     flex-direction: column;
@@ -244,20 +248,43 @@ font-size: 2em;
 
 
 @media only screen and (max-width: 1010px) {
+
+    .Card{
+        width: 270px;
+        
+    }
     .Landingpage{
-        width: 100%;
         height: 200vh;
-         background: rgb(255, 255, 255);
-         display: flex;
          flex-direction: column;
          align-items: center;
         justify-content: center;
-         overflow: hidden;
+        padding: 4% 2%;
      }
      .contentpart{
-         width: 80%;
+         width: 90%;
+         height: 70%;
      }
      .contentpart:hover{
-         width: 90%;
+         width: 100%;
      }
+     
+.projectPart{
+
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+    width:100%;
+    height: 88%;
+}
+.infoPart{
+    width: 100%;
+}
+.projectPart::-webkit-scrollbar{
+    display: none;
+}
+.infoPart img{ 
+    width: 35%;
+
+
+}
   }
