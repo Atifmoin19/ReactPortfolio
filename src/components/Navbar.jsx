@@ -1,6 +1,9 @@
-import React from 'react';
-import image from '../resources/logo.png'
+import React,{useState} from 'react';
+import image from '../resources/logo.png';
+
+
 const Navbar = () => {
+ 
     return (
         <div>
         <div className='bodypart'>
@@ -12,9 +15,11 @@ const Navbar = () => {
                 <h1>+</h1>
                     <input type="text" placeholder='Serch for intrest'/>
                 </div>
-                <div className='links'>
-                    <a href="/">About Us </a>
-                    <a href="/">Resources </a>
+        
+    
+                <div className='links' >
+                    <a href='#aboutme'>About Me </a>
+                    <a href="#project">Project </a>
                     <a href="/">Info </a>
                     <a href="/">Feedback </a>
                     <a href="/">Contact </a>

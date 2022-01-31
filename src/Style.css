@@ -4,6 +4,9 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 .bodypart{
     background: url(./resources/bg.jpg) no-repeat;
     width: 100%;
@@ -13,7 +16,6 @@ box-sizing: border-box;
 .Navbar
 {
     padding: 10px;
-    
     width: 100vw;
     background: rgba(82, 82, 82, 0.795);
     overflow: hidden;
@@ -248,7 +250,15 @@ font-size: 2em;
 
 
 @media only screen and (max-width: 1010px) {
-
+    .Navbar
+    {
+        flex-direction: column;
+        
+    }
+    .Serchbox{
+        margin: 4% 2%;
+        padding: 0% 2%;
+    }
     .Card{
         width: 270px;
         

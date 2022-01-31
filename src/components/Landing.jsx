@@ -5,9 +5,9 @@ import { faFacebookF,faInstagram,faLinkedin } from '@fortawesome/free-brands-svg
 
 import Project from './Project';
 
-const Landing = () => {
+const Landing = (props) => {
     return (
-        <div className='Landingpage'>
+        <div className='Landingpage' style={props.style}>
         <div className='infoPart'>
                 <img src={image}/>
                 <div className='Detailspart'>
@@ -22,8 +22,8 @@ const Landing = () => {
 
 </div>
 
-<div className='contentpart'>
-<h1>Projects</h1>
+<div className='contentpart' id ="aboutme">
+<h1  id ="project">Projects</h1>
 <div className='projectPart'>
          <Project/>
          </div>
