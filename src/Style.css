@@ -1,24 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
 *
 {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
 }
 html{
     scroll-behavior: smooth;
 }
+body{
+    background:#212f45;
+}
 .bodypart{
-    background: url(./resources/bg.jpg) no-repeat;
+    background:#212f45;
     width: 100%;
     overflow: hidden;
+   
 }
 
 .Navbar
 {
     padding: 10px;
-    width: 100vw;
-    background: rgba(82, 82, 82, 0.795);
-    overflow: hidden;
+    width: 100%;
+    background-color: #212f45;
+    
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,7 +60,7 @@ html{
     height: 2.5rem;
     color: rgb(255, 255, 255);
     background-color: rgba(53, 52, 52, 0.644);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.397);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.397) inset;
 }
 .Serchbox input, .Serchbox input::placeholder{
     background-color: rgba(53, 52, 52, 0);
@@ -63,6 +76,7 @@ html{
 .links{
     justify-content: center;
 align-items: center;
+text-align: center;
 padding: 1%;
     width: 30rem;
 }
@@ -72,7 +86,7 @@ padding: 1%;
     color: #fff;
     Margin: 0% 1%;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Source Code Pro', monospace;
     cursor: pointer;
     transition: .6s;
 }
@@ -89,18 +103,17 @@ padding: 1%;
 .Landingpage{
    width: 100%;
     height: 100vh;
-    background: rgb(255, 255, 255);
+    background: #212f45;
     display: flex;
     align-items: center;
    justify-content: center;
    box-sizing: border-box;
     overflow: hidden;
-    padding: 4%;
+    padding: 2%;
 }
 .infoPart{
     display: flex;
     justify-content: center;
-    
     box-sizing: border-box;
     width: 50%;
     height: 100%;
@@ -121,8 +134,10 @@ padding: 1%;
     display: none;
 }
 .contentpart
-{background: url(./resources/wall3.jpg) no-repeat;
+{background: #212b3d;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.26) inset;
     background-position: center;
+    border-radius: 15px;
     overflow: scroll;
     display: flex;
     flex-wrap: wrap;
@@ -135,32 +150,62 @@ padding: 1%;
 .contentpart h1{
     width: 100%;
     padding: 1%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: #fff;
     box-shadow: 0px 0px 15px rgba(61, 60, 60, 0.13);
 }
 .contentpart:hover{
     width:80%;
 }
-.infoPart img{ 
-    width: 35%;
+.infoPart .infoPartimage{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 2px 0px rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    
+    overflow: hidden;
 
-transition: .6s;
+}
+.infoPart .infoPartimage .infoPartimage_bg {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 98%;
+    border-radius: 50%;
+    background-image: url("./resources/my.png");
+    transition: .6s;
+   background-size: cover;
 }
 
-.infoPart img:hover{
+.infoPart .infoPartimage_bg:hover{
 
     transform: translateY(-5px);
 
 }
 .Detailspart{
-    width: 55%;
+    width: 69%;
     margin: 25px;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #48bfe3;
     
+}
+.Detailspart h2{
+    font-size:1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Source Code Pro', monospace;
+    color: #48bfe3;
 }
 
 .Detailspart:hover {
@@ -170,14 +215,21 @@ transition: .6s;
 
 button{
     padding: 10px 20px;
-    background-color: rgb(240, 101, 21);
-    border-radius: 10px;
+    background-color: #212b3d;
+    border-radius: 15px;
     outline: none;
     border: none;
     color: oldlace;
     font-size:14px;
+    font-family: 'Source Code Pro', monospace;
     margin:8% 0% 0% 0%;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.26) inset;
     cursor: pointer;
+}
+button:hover{
+    background-color: #48bfe3;
+
+    color: rgb(0, 0, 0);
 }
 .Maincard{
     margin: 5%;
@@ -186,10 +238,8 @@ button{
     width: 300px;
     overflow: hidden;
     border-radius: 25px;
-    background-color: rgb(255, 255, 255);
-
+    background-color: #0b525b;
     text-align: center;
-    box-shadow: 0px 0px 15px rgba(61, 60, 60, 0.568);
     transition: .7s;
 }
 
@@ -209,10 +259,10 @@ font-size: 2em;
     transition: .6s;
 }
 .socialmedia div a{
-    color: black;
+    color: #fff;
 }
 .socialmedia div:hover,.socialmedia div:hover a{
-    color: rgba(25, 192, 3, 0.938);
+    color: #91e2fa;
     transform: scale(1.5);
 }
 .image{
@@ -221,12 +271,15 @@ font-size: 2em;
     overflow: hidden;
 }
 .Card img{
+    filter: blur(2px);
     width: 300px;
+    transform: scale(1.2);
     transition: .7s;
    
   
 }
 .Card img:hover{
+    filter: blur(0px);
     transform: scale(1.4);
 }
 .details{
@@ -235,11 +288,15 @@ font-size: 2em;
 }
 .details h2{
     margin: 2% 0%;
-    color: rgb(39, 38, 38);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+   
+    color: rgb(247, 247, 247);
 }
 .details p{
-    font-size: 16px;
-    color:rgb(100, 100, 100)
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+    color:rgb(185, 185, 185)
 }
 
 
@@ -249,10 +306,16 @@ font-size: 2em;
 
 
 
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 1024px) {
+    .Detailspart h2{
+        font-size:1.7em;
+       
+    }
     .Navbar
     {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
     }
     .Serchbox{
@@ -292,9 +355,29 @@ font-size: 2em;
 .projectPart::-webkit-scrollbar{
     display: none;
 }
-.infoPart img{ 
-    width: 35%;
+
+  }
 
 
-}
+  
+@media only screen and (max-width: 450px) {
+    .Serchbox input, .Serchbox input::placeholder{
+        width: 90%;
+        
+    }
+    .Detailspart h2{
+        font-size:1.7em;
+       
+    }
+    .Serchbox{
+        width: 90%;
+    }
+    .links{
+        width: 90%;
+    }
+     .contentpart{
+         width: 90%;
+         height: 100%;
+     }
+
   }

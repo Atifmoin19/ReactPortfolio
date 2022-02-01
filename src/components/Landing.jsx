@@ -9,13 +9,23 @@ const Landing = (props) => {
     return (
         <div className='Landingpage' style={props.style}>
         <div className='infoPart'>
-                <img src={image}/>
+        <div className='infoPartimage'>
+        <div className='infoPartimage_bg'>
+        
+                </div>
+                </div>
                 <div className='Detailspart'>
                 <h1>Atif Moin</h1>
                 <h2>
+               
                    <Typical
-                       
+                      steps={['I am a Web Developer! 💻', 
+                      1000,
+                       'I am a Graphic Designer🖌️', 1000]}
+                      loop={Infinity}
+                      from={"I"}
                    />
+               
 
                 </h2>
                 <div className='socialmedia'>
