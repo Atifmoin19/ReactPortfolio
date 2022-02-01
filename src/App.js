@@ -1,7 +1,9 @@
 import React from 'react';
 import Landing from './components/Landing';
 import Navbar from './components/Navbar';
-import Reactproject from './components/Reactproject';
+
+
+import Formultimaate from './components/Formultimaate';
 
 
 
@@ -17,7 +19,7 @@ cssStyle.background = 'green';
     <>
     <Navbar />
 <Landing/>
-<Reactproject/>
+<Formultimaate/>
 
     </>
   );

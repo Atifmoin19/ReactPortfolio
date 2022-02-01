@@ -1,5 +1,4 @@
 import React from 'react';
-import image from '../resources/my.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF,faInstagram,faLinkedin } from '@fortawesome/free-brands-svg-icons' 
 import Typical from "react-typical";
@@ -8,7 +7,7 @@ import Project from './Project';
 const Landing = (props) => {
     return (
         <div className='Landingpage' style={props.style}>
-        <div className='infoPart'>
+        <div className='infoPart'  id ="aboutme">
         <div className='infoPartimage'>
         <div className='infoPartimage_bg'>
         
@@ -37,7 +36,7 @@ const Landing = (props) => {
 
 </div>
 
-<div className='contentpart' id ="aboutme">
+<div className='contentpart' id ="project">
 <h1  id ="project">Projects</h1>
 <div className='projectPart'>
          <Project/>
