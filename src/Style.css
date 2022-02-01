@@ -308,7 +308,10 @@ font-size: 2em;
 
 @media only screen and (max-width: 1024px) {
     .Detailspart h2{
-        font-size:1.7em;
+        font-size:1.3em;
+        text-align: center;
+        height: 50px;
+        margin: 2% ;
        
     }
     .Navbar
@@ -366,7 +369,8 @@ font-size: 2em;
         
     }
     .Detailspart h2{
-        font-size:1.7em;
+        text-align: center;
+        font-size:1.2em;
        
     }
     .Serchbox{
