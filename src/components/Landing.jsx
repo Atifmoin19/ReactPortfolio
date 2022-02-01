@@ -2,7 +2,7 @@ import React from 'react';
 import image from '../resources/my.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF,faInstagram,faLinkedin } from '@fortawesome/free-brands-svg-icons' 
-
+import Typical from "react-typical";
 import Project from './Project';
 
 const Landing = (props) => {
@@ -12,7 +12,12 @@ const Landing = (props) => {
                 <img src={image}/>
                 <div className='Detailspart'>
                 <h1>Atif Moin</h1>
-                <p> My name is atif moin and i am a web developer and a graphic designer also good at coding. </p>
+                <h2>
+                   <Typical
+                       
+                   />
+
+                </h2>
                 <div className='socialmedia'>
                <div><a href='https://www.facebook.com/jsone.atif/'  target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a></div>
                 <div><a href='https://www.instagram.com/_.a_ti_f._/' target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></div>
