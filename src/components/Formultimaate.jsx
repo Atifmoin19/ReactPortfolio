@@ -40,7 +40,7 @@ const Formultimaate = () => {
         <form ref={form} onSubmit={sendEmail}>
         <div className='input'>
         <div className='Greeting'>
-            <h1> Hello {FullName.fname} {FullName.lname} </h1>
+            <h1> Hello <br/> {FullName.fname} {FullName.lname} </h1>
             <br/> <h2> {FullName.email}</h2>
             </div>
             <p/>
