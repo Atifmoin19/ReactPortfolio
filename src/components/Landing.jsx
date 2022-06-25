@@ -37,7 +37,7 @@ const Landing = (props) => {
 </div>
 
 <div className='contentpart' id ="project">
-<h1  id ="project">Projects</h1>
+<h1  id ="project">Projects Web Develpoment</h1>
 <div className='projectPart'>
          <Project/>
          </div>

@@ -267,6 +267,7 @@ button:hover {
 
 .Card {
     width: 300px;
+    max-height: 450px;
     overflow: hidden;
     border-radius: 25px;
     background-color: #0b525b;
@@ -280,19 +281,29 @@ button:hover {
 
 .image {
     width: 300px;
+    max-height: 300px;
     overflow: hidden;
+    
 }
-
+.image h2{
+    text-align: center;
+  transform: translateY(-50px);
+  color: white;
+  transition: .5s ease-in-out;
+}
 .Card img {
-    filter: blur(2px);
+    filter: blur(2px) opacity(.2);
     width: 300px;
     transform: scale(1.2);
     transition: .7s;
 }
 
-.Card img:hover {
-    filter: blur(0px);
+.Card img:hover{
+    filter: opacity(1) blur(0px);
     transform: scale(1.4);
+}
+.Card .image:hover h2{
+    transform: translateY(-400px);
 }
 
 .details {

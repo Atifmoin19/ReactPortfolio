@@ -6,6 +6,7 @@ const Design = (props) => {
             <div className='Card'>
                 <div className='image'>
                     <img src={props.src}></img>
+                    <h2>Hover me</h2>
                 </div>
                 <div className='details'>
                 <h2>{props.title}</h2>
