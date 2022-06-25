@@ -317,7 +317,11 @@ button:hover {
 
 
 /* ====================================Form================================================================================================= */
-
+.HeadingForm{
+    text-align: center;
+    color: white;
+    margin-top: 20PX;
+}
 .Form {
     max-width: 90%;
     height: 100vh;
@@ -326,7 +330,9 @@ button:hover {
     box-sizing: border-box;
     overflow: hidden;
     align-items: center;
+    
     margin: 5%;
+    margin-top: 20px;
     padding: 40px;
     background: rgba(255, 255, 255, 0.123);
 }
@@ -393,8 +399,19 @@ button:hover {
     align-items: center;
     color: #fff;
 }
-
-
+.pgd h1{
+    margin: 2%;
+    text-align: center;
+    color:white;
+}
+.projectgalery{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+}
+.projectgalery::-webkit-scrollbar {
+    display: none;
+}
 /* ==========================================Media querryp==============================================================================*/
 
 @media only screen and (max-width: 1024px) {
@@ -520,3 +537,4 @@ button:hover {
         overflow: hidden;
     }
 }
+

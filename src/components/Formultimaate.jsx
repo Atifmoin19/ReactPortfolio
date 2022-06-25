@@ -36,7 +36,12 @@ const Formultimaate = () => {
 
 
     return (
+        <>
+        <div className='HeadingForm'>
+            <h1>FEEDBACK FORM</h1>
+        </div>
         <div className='Form' id='Feedback'>
+        
         <form ref={form} onSubmit={sendEmail}>
         <div className='input'>
         <div className='Greeting'>
@@ -82,6 +87,7 @@ const Formultimaate = () => {
         </div>
         </form>
         </div>
+        </>
     );
 }
 
