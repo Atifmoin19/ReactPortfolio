@@ -6,10 +6,10 @@ const Card = (props) => {
             <div className='Card'>
             
                 <div className='image'>
-                
+                <h2>Hover me</h2>
                     <img src={props.src}>
                     </img>
-                    <h2>Hover me</h2>
+                    
                
                 </div>
                 <div className='details'>

@@ -1,9 +1,8 @@
 import React from 'react';
 import Landing from './components/Landing';
 import Navbar from './components/Navbar';
-import GRAPHIC from './components/GRAPHIC'
-
-
+import GRAPHIC from './components/GRAPHIC';
+import Footer from './components/Footer'
 import Formultimaate from './components/Formultimaate';
 
 
@@ -22,6 +21,7 @@ cssStyle.background = 'green';
 <Landing/>
 <GRAPHIC/>
 <Formultimaate/>
+<Footer/>
 
     </>
   );

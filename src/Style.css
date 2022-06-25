@@ -287,7 +287,7 @@ button:hover {
 }
 .image h2{
     text-align: center;
-  transform: translateY(-50px);
+  transform: translateY(80px);
   color: white;
   transition: .5s ease-in-out;
 }
@@ -423,6 +423,90 @@ button:hover {
 .projectgalery::-webkit-scrollbar {
     display: none;
 }
+.Footer{
+    width: 100%;
+    height: 56vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #41444a;
+    display: flex;
+}
+.Footer .leftsidef{
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftsidef .Logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+.leftsidef .Logo img{
+    width: 100%;
+}
+.Footer .rightsidef{
+    width: 40%;
+    
+}
+.Footer .rightsidef h1{
+    text-align: center;
+    font-size: 2.4em;
+    padding: 20px;
+    color: white;
+}
+.Contact-info{
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: left;
+    width: 100%;
+    color: white;
+}
+.Contact-info span{
+    padding: 10px 2px;
+    display: flex;
+  
+    align-items: center;
+}
+.Contact-info span h2{
+    padding: 0 20px;
+}
+.Contact-follow{
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact-follow a{
+    color :white; 
+    padding: 0 20px;
+    text-decoration: none;
+   
+}
+.Contact-follow a:hover{
+    color: #28a200;
+   
+}
+.Whatsapp{
+    display: flex;
+    padding: 13px;
+    font-size: .6em;
+    border: 2px solid #41444a;
+    ;
+    background-color: #9ef01a;
+    border-radius: 25px;
+    text-align: center;
+    transition: .2s ease-in-out;
+}
+.Whatsapp:hover{
+    border: 2px solid #0b525b;
+    background-color: #ffffff;
+}
 /* ==========================================Media querryp==============================================================================*/
 
 @media only screen and (max-width: 1024px) {
@@ -547,5 +631,78 @@ button:hover {
         box-sizing: border-box;
         overflow: hidden;
     }
+    
+.Footer{
+   
+    height: 130vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Footer .leftsidef{
+    width: 100%;
+    }
+.leftsidef .Logo{
+    
+    width: 200px;
+    height: 200px;
+}
+.Footer .rightsidef{
+    width: 100%;
+    
+}
+.Footer .rightsidef h1{
+   
+    padding: 10px;
+    color: white;
+}
+.Contact-info{
+    padding: 20px;
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+    color: white;
+}
+.Contact-info span{
+    padding: 10px 2px;
+    display: flex;
+  
+    align-items: center;
+}
+.Contact-info span h2{
+    padding: 0 20px;
+}
+.Contact-follow{
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Contact-follow a{
+    color :white; 
+    padding: 10px 20px;
+    text-decoration: none;
+   
+}
+.Contact-follow a:hover{
+    color: #28a200;
+   
+}
+.Whatsapp{
+    display: flex;
+    padding: 13px;
+    font-size: .6em;
+    border: 2px solid #41444a;
+    ;
+    background-color: #9ef01a;
+    border-radius: 25px;
+    text-align: center;
+    transition: .2s ease-in-out;
+}
+.Whatsapp:hover{
+    border: 2px solid #0b525b;
+    background-color: #ffffff;
+}
 }
 
