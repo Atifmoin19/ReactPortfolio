@@ -4,7 +4,7 @@ import Image from '../resources/p2.jpg';
 
 const slideImages = [
   {
-    url: 'https://drive.google.com/file/d/1xViG0DSGQHBZcVFTEvuRWItJjw61Dy-R/view?usp=sharing',
+    url: '../src/resources/Clicks/1.jpeg',
     caption: 'Slide 1'
   },
   {
