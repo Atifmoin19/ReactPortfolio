@@ -558,6 +558,48 @@ button:hover {
     }
 }
 
+.fix{
+    z-index: 2222222222;
+   
+    position: fixed;
+    top:90%;
+    
+    left:95%;
+ 
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fix a{
+    background-color: #0b525b9e;
+    width: 50px;
+    height: 50px;
+    padding:16px 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 8px;
+    color: rgb(255, 255, 255);
+    animation-name: animate ;
+    animation-duration: 3s;
+    font-stretch: 20px;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 20px 6px;
+    
+}
+.fix a span{
+    font-size: .5em;
+}
+
+@keyframes animate {
+  0% {transform: translateY(-8px);}
+    50% {transform: translateY(16px);}
+    100% {transform: translateY(-8px);}
+  }
 
 /* ========================================Part 2========================================================================================= */
 
@@ -706,6 +748,9 @@ button:hover {
     border: 2px solid #0b525b;
     background-color: #ffffff;
 }
+.fix{
+    left: 80%;
+}
 }
 .slide-container{
     width: 100%;
@@ -759,4 +804,3 @@ button:hover {
     width: 300px;
     
 }
-
