@@ -24,7 +24,7 @@ const Footer = () => {
                 <a href='https://www.instagram.com/_.a_ti_f._/'  target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
                 <a href='https://github.com/Atifmoin19'  target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href='https://www.linkedin.com/in/atif-moin-858167179/'  target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-                <a href="https://wa.me/15551234567?text=Hello%20Atif" target="_blank"> <div className='Whatsapp'> Whatsapp Me</div></a>
+                <a href="https://wa.me/7007136187?text=Hello%20Atif" target="_blank"> <div className='Whatsapp'> Whatsapp Me</div></a>
                 </div>
             </div>
             </div>

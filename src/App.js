@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import GRAPHIC from './components/GRAPHIC';
 import Footer from './components/Footer'
 import Formultimaate from './components/Formultimaate';
+import Slideshow from './components/Slideshow';
 
 
 
@@ -20,6 +21,7 @@ cssStyle.background = 'green';
     <Navbar />
 <Landing/>
 <GRAPHIC/>
+<Slideshow/>
 <Formultimaate/>
 <Footer/>
 
