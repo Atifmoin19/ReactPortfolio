@@ -708,11 +708,55 @@ button:hover {
 }
 }
 .slide-container{
-    margin: 15% 0%;
+    width: 100%;
+    overflow: scroll;
+    height: 80vh;
+    
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
 }
-.Imgheight{
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.slide-container::-webkit-scrollbar {
+    display: none;
 }
+.slideshow{
+    width: 20%;
+    display: flex;
+}
+
+.Card2 {
+    width: 300px;
+   max-height: 450px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #0b525b;
+    text-align: center;
+    transition: .7s;
+   
+}
+
+.Card2:hover {
+    transform: scale(1.2);
+}
+
+.image2 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image2 h2{
+    text-align: center;
+
+  color: white;
+  transition: .5s ease-in-out;
+}
+.Card2 img {
+    width: 300px;
+    
+}
+

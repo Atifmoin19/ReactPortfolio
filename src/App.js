@@ -20,8 +20,9 @@ cssStyle.background = 'green';
     <>
     <Navbar />
 <Landing/>
-<GRAPHIC/>
 <Slideshow/>
+<GRAPHIC/>
+
 <Formultimaate/>
 <Footer/>
 

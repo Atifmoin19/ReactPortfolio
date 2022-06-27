@@ -1,34 +1,29 @@
 import React from 'react';
-import { Slide } from 'react-slideshow-image';
-import Image from '../resources/p2.jpg';
+import slideImages from './Photodata';
 
-const slideImages = [
-  {
-    url: '../src/resources/Clicks/1.jpeg',
-    caption: 'Slide 1'
-  },
-  {
-    url: 'https://atifmoin19.github.io/PORTFOLIO//resources/Clicks/images/1.jpg',
-    caption: 'Slide 2'
-  },
-  {
-    url: 'https://atifmoin19.github.io/PORTFOLIO//resources/images/Screenshot%202022-01-31%20174707.png',
-    caption: 'Slide 3'
-  },
-];
+
 
 const Slideshow = () => {
     return (
+        <div className='pgd'>
+        <h1>Photography</h1>
       <div className="slide-container">
-        <Slide>
+      
+        <div className='slideshow'>
          {slideImages.map((slideImage, index)=> (
-            <div className="each-slide" key={index}>
-              <div className='Imgheight' style={{'backgroundImage': `url(${slideImage.url})`}}>
-                <span>{slideImage.caption}</span>
-              </div>
-            </div>
+            <div className="Maincard">
+            <div className='Card2' key={index}>
+                <div className='image2'>
+            <img src={slideImage.url}/>
+            <h2>{slideImage.caption}</h2>
+                </div>
+               
+                </div>
+                </div>
+          
           ))} 
-        </Slide>
+        </div>
+      </div>
       </div>
     )
 }
