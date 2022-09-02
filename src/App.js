@@ -22,7 +22,7 @@ cssStyle.background = 'green';
     <Top/>
     <Navbar />
 <Landing/>
-<Slideshow/>
+{/* <Slideshow/> */}
 <GRAPHIC/>
 
 <Formultimaate/>
