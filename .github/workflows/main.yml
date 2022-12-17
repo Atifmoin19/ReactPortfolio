@@ -28,6 +28,6 @@ jobs:
     - name: deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-          github_token: ${{ secrets.SECRET_ACCESS_TOCKEN }}
+          github_token: ${{ secrets.ACTION_KEY}}
           publish_dir: ./build  
 
