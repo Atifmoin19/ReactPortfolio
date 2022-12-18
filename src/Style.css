@@ -9,12 +9,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-<<<<<<< HEAD
+
 :root{
 --bgcolor:#212f45;
 }
-=======
->>>>>>> ae1001e7f571e1384e879153ffd38ab4a95dfea4
+
 a{
     text-decoration: none;
     color: #fff;
@@ -26,19 +25,11 @@ html {
 }
 
 body {
-<<<<<<< HEAD
     background: var(--bgcolor);
 }
 
 .bodypart {
     background: var(--bgcolor);
-=======
-    background: #212f45;
-}
-
-.bodypart {
-    background: #212f45;
->>>>>>> ae1001e7f571e1384e879153ffd38ab4a95dfea4
     width: 100%;
     overflow: hidden;
 }
@@ -50,11 +41,7 @@ body {
     padding: 10px;
     width: 100%;
     position: fixed;
-<<<<<<< HEAD
     background-color: var(--bgcolor);
-=======
-    background-color: #000000b7;
->>>>>>> ae1001e7f571e1384e879153ffd38ab4a95dfea4
     backdrop-filter: blur(4px);
     display: flex;
     flex-wrap: wrap;
@@ -111,11 +98,7 @@ ul.links li:hover a
     margin-top: 100px;
     width: 100%;
    height: 100vh;
-<<<<<<< HEAD
     background: var(--bgcolor);
-=======
-    background: #212f45;
->>>>>>> ae1001e7f571e1384e879153ffd38ab4a95dfea4
     display: flex;
     align-items: center;
     justify-content: center;
