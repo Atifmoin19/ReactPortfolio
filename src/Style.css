@@ -7,6 +7,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease-in-out;
 }
 
 html {
@@ -29,11 +35,14 @@ body {
 .Navbar {
     padding: 10px;
     width: 100%;
-    background-color: #212f45;
+    position: fixed;
+    background-color: #000000b7;
+    backdrop-filter: blur(4px);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    z-index: 9999;
 }
 
 .Navbar .Logo {
@@ -47,61 +56,43 @@ body {
     height: 3rem;
 }
 
-.Serchbox {
-    border-radius: 30px;
-    display: flex;
-    padding: 0% 1%;
-    Margin: 0% 1%;
-    flex-wrap: wrap;
-    width: 400px;
-    overflow: hidden;
-    height: 2.5rem;
-    color: rgb(255, 255, 255);
-    background-color: rgba(53, 52, 52, 0.644);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.397) inset;
-}
 
-.Serchbox input,
-.Serchbox input::placeholder {
-    background-color: rgba(53, 52, 52, 0);
-    border: none;
-    padding: 1% 3%;
-    outline: none;
-    color: rgba(255, 255, 255, 0.452);
-    width: 340px;
-    height: 2.5rem;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.links {
+ul.links {
     justify-content: center;
     align-items: center;
+    display: flex;
     text-align: center;
-    padding: 1%;
-    width: 30rem;
+    list-style: none;
 }
+ul.links li
+{
+    margin: 0 10px;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    transition: .2s ease-in-out;
+}
+ul.links li:hover
+{
+   scale:1.1;
+ 
+}   
+ul.links li:hover a
+{
+  color: #28a200;
+ 
+}   
 
-.links a {
-    text-decoration: none;
-    color: #fff;
-    Margin: 0% 1%;
-    font-weight: bold;
-    font-family: 'Source Code Pro', monospace;
-    cursor: pointer;
-    transition: .6s;
-}
 
-.links a:hover {
-    color: #9ef01a;
-}
+
+
 
 
 /* ----------------------------------Landing Page-----============================================================================= */
 
 .Landingpage {
+    margin-top: 100px;
     width: 100%;
-    height: 100vh;
+   height: 100vh;
     background: #212f45;
     display: flex;
     align-items: center;
@@ -135,25 +126,32 @@ body {
 }
 
 .contentpart {
+    position: relative;
     background: #212b3d;
     box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.26) inset;
     background-position: center;
     border-radius: 15px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 50%;
     height: 100%;
-    align-items: center;
+    min-height: 70vh;
+    align-items: flex-start;
     transition: .7s;
 }
 
-.contentpart h1 {
+.contentpart > h1 {
+    top: 0;
     width: 100%;
+    background: #212b3d;
+position: sticky;
     padding: 1%;
+    z-index: 999;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    
     text-align: center;
     box-shadow: 0px 0px 15px rgba(61, 60, 60, 0.13);
 }
@@ -179,8 +177,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 98%;
-    height: 98%;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     background-image: url("./resources/my.png");
     transition: .6s;
@@ -268,7 +266,7 @@ button:hover {
 
 .Card {
     width: 300px;
-    max-height: 450px;
+    min-height: 300px;
     overflow: hidden;
     border-radius: 25px;
     background-color: #0b525b;
@@ -426,14 +424,15 @@ button:hover {
 }
 .Footer{
     width: 100%;
-    height: 56vh;
+
     padding: 20px;
     box-sizing: border-box;
     background-color: #41444a;
     display: flex;
+
 }
 .Footer .leftsidef{
-    width: 60%;
+    width: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -451,18 +450,18 @@ button:hover {
     width: 100%;
 }
 .Footer .rightsidef{
-    width: 40%;
+    width: 50%;
     
 }
 .Footer .rightsidef h1{
     text-align: center;
-    font-size: 2.4em;
+    font-size: 2em;
     padding: 20px;
     color: white;
 }
 .Contact-info{
     padding: 20px;
-    font-size: 1.2em;
+  
     text-align: left;
     width: 100%;
     color: white;
@@ -502,7 +501,7 @@ button:hover {
     background-color: #9ef01a;
     border-radius: 25px;
     text-align: center;
-    transition: .2s ease-in-out;
+
 }
 .Whatsapp:hover{
     border: 2px solid #0b525b;
@@ -522,23 +521,20 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
-    .Serchbox {
-        margin: 4% 2%;
-        padding: 0% 2%;
-    }
+    
     .Card {
         width: 270px;
     }
     .Landingpage {
-        height: 200vh;
+     
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+     height: auto;
+        justify-content: flex-start;
         padding: 4% 2%;
     }
     .contentpart {
         width: 90%;
-        height: 70%;
+       
     }
     .contentpart:hover {
         width: 100%;
@@ -552,9 +548,22 @@ button:hover {
     }
     .infoPart {
         width: 100%;
+      
     }
     .projectPart::-webkit-scrollbar {
         display: none;
+    }
+    .Footer{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Footer .leftsidef{
+        width: 100%;
+        }
+    .Footer .rightsidef{
+        width: 100%;
+        
     }
 }
 
@@ -563,7 +572,6 @@ button:hover {
    
     position: fixed;
     top:90%;
-    
     left:95%;
  
     color: #ffffff;
@@ -580,7 +588,6 @@ button:hover {
     text-decoration: none;
     text-align: center;
     border-radius: 50%;
-    font-weight: 900;
     font-size: 2em;
     line-height: 8px;
     color: rgb(255, 255, 255);
@@ -588,11 +595,12 @@ button:hover {
     animation-duration: 3s;
     font-stretch: 20px;
     animation-iteration-count: infinite;
-    box-shadow: 0 0 20px 6px;
+    box-shadow: 0 0 10px;
     
 }
 .fix a span{
     font-size: .5em;
+
 }
 
 @keyframes animate {
@@ -631,7 +639,7 @@ button:hover {
     }
     .Form {
         width: 90%;
-        height: 100vh;
+        min-height: 100vh;
         box-sizing: border-box;
         overflow: hidden;
         padding: 20px 30px;
@@ -675,24 +683,14 @@ button:hover {
         overflow: hidden;
     }
     
-.Footer{
-   
-    height: 130vh;
-    display: flex;
-    flex-wrap: wrap;
-}
-.Footer .leftsidef{
-    width: 100%;
-    }
+
 .leftsidef .Logo{
     
     width: 200px;
     height: 200px;
 }
-.Footer .rightsidef{
-    width: 100%;
-    
-}
+
+
 .Footer .rightsidef h1{
    
     padding: 10px;

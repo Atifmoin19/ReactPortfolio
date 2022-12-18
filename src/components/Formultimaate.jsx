@@ -28,7 +28,7 @@ const Formultimaate = () => {
         }, (error) => {
             console.log(error.text);
         });
-        alert(" Thanks" + FullName.fname + FullName.lname + "  For subbmitting form")
+        alert(" Thanks " + FullName.fname + " " + FullName.lname + "  For subbmitting form")
         event.target.reset();
         event.targe.value.reset();
 
@@ -44,10 +44,7 @@ const Formultimaate = () => {
         
         <form ref={form} onSubmit={sendEmail}>
         <div className='input'>
-        <div className='Greeting'>
-            <h1> Hello <br/> {FullName.fname} {FullName.lname} </h1>
-            <br/> <h2> {FullName.email}</h2>
-            </div>
+    
             <p/>
             <div className='inputbox'>
             <span>
