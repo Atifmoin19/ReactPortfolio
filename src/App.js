@@ -4,8 +4,9 @@ import Navbar from './components/Navbar';
 import GRAPHIC from './components/GRAPHIC';
 import Footer from './components/Footer'
 import Formultimaate from './components/Formultimaate';
-import Slideshow from './components/Slideshow';
+
 import Top from './components/Top';
+import Slidercomp from './components/Slider';
 
 
 
@@ -22,8 +23,9 @@ cssStyle.background = 'green';
     <Top/>
     <Navbar />
 <Landing/>
-{/* <Slideshow/> */}
 <GRAPHIC/>
+<Slidercomp/>
+
 
 <Formultimaate/>
 <Footer/>

@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='bodypart' id='top'>
             <div className="Navbar">
                 <div className='Logo'>
-                    <img src={image} alt='logo'/>
+                    <img src={image} alt='logo'/> <span className="namelogo"><h1>Aitf moin</h1></span>
                 </div>
               
         

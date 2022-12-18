@@ -48,7 +48,7 @@ const Formultimaate = () => {
             <p/>
             <div className='inputbox'>
             <span>
-            <label for="fname"> First Name </label>
+            <label htmlFor="fname"> First Name </label>
             </span>
             <br/>
             <input type="text"  name = "fname" onChange={inputEvent} />
@@ -56,7 +56,7 @@ const Formultimaate = () => {
             <br/>
             <div className='inputbox'>
             <span>
-            <label for="lname"> Last Name </label>
+            <label htmlFor="lname"> Last Name </label>
 
 </span>  
 <br/>
@@ -65,7 +65,7 @@ const Formultimaate = () => {
             <br/>
             <div className='inputbox'>
             <span>
-            <label for="email"> Email</label>
+            <label htmlFor="email"> Email</label>
     
     </span>  
     <br/>
@@ -73,7 +73,7 @@ const Formultimaate = () => {
             </div>
             <div className='inputbox'>
             <span>
-            <label for="message"> Feedback</label>
+            <label htmlFor="message"> Feedback</label>
     
     </span>        
     <br/>
