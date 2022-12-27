@@ -13,11 +13,8 @@ import Slidercomp from './components/Slider';
 
 
 const App = () => {
-  const cssStyle={};
-const theme = ()=>{
-  // console.log("Clicked")
-cssStyle.background = 'green';
-}
+ 
+
   return (
     <>
     <Top/>

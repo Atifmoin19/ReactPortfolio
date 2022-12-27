@@ -11,10 +11,10 @@
 }
 
 :root{
---bgcolor:#ffbf00;
---opbgcolor:#019db1;
---cardbg:#02569b;
---navbar:#0b0c16ee;
+--bgcolor:#106466;
+--opbgcolor:#b6b6b6;
+--cardbg:#0ab28f;
+--navbar:#073233;
 --white:#fff;
 --black:#000;
 }
@@ -233,7 +233,7 @@ position: sticky;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--opbgcolor)
+    color: var(--white)
 }
 
 .Detailspart h2 {
@@ -242,7 +242,7 @@ position: sticky;
     font-weight: 500;
     letter-spacing: 2px;
     font-family: 'Source Code Pro', monospace;
-    color: var(--opbgcolor);
+    color: var(--white);
 }
 
 .Detailspart:hover {
@@ -827,14 +827,13 @@ button:hover {
     padding: 13px;
     font-size: .6em;
 
-    ;
     background-color: var(--opbgcolor);
     border-radius: 25px;
     text-align: center;
     transition: .2s ease-in-out;
 }
 .Whatsapp:hover{
-    border: 2px solid var(--cardbg);
+   
     background-color: var(--white);
 }
 .fix{
