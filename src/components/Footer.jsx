@@ -1,7 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import image from '../resources/logo.png';
+import image from '../resources/resume.png';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faEye } from '@fortawesome/free-regular-svg-icons';
 
 const Footer = () => {
     return (
@@ -9,7 +11,19 @@ const Footer = () => {
             <div className='Footer'>
             <div className='leftsidef'>
             <div className='Logo'>
-                    <img src={image} alt='logo'/>
+                   <div className="resume">
+                    <div className="resumeimage"><img src={image} /></div>
+                    <div className="buttonsr">
+                        <a href="../resources/resume.pdf" alt="download" target="_blank">
+                        <div className="btnr downbtn"><FontAwesomeIcon icon={faDownload} /> Download</div>
+
+                        </a>
+                        <a href="https://drive.google.com/file/d/18bVKoTyhqwhD5WiN3S43MBnagypE0h9B/view?usp=share_link" alt="view" target="_blank">
+<div className="btnr viewbtn"><FontAwesomeIcon icon={faEye} /> View</div>
+                            
+                        </a>
+                    </div>
+                   </div>
                 </div>
                 </div>
              <div className='rightsidef' id='contact'>
