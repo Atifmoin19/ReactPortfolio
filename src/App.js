@@ -7,6 +7,7 @@ import Formultimaate from './components/Formultimaate';
 
 import Top from './components/Top';
 import Slidercomp from './components/Slider';
+import Movinghead from './components/Movinghead';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
 
   return (
     <>
+    <Movinghead/>
     <Top/>
     <Navbar />
 <Landing/>
