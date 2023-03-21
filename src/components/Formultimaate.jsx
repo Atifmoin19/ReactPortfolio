@@ -48,7 +48,7 @@ const Formultimaate = () => {
         FullName.fname +
         " " +
         FullName.lname +
-        "  For subbmitting form"
+        "  for subbmitting form"
     );
     event.target.reset();
     event.targe.value.reset();
